@@ -12,12 +12,14 @@
     />
     <style>
       #header {
-        background-color: rgb(201, 134, 134);
+       
         margin-top: 50px;
         margin-bottom: 50px;
         font-family: "Hubballi", cursive;
         text-transform: uppercase;
         text-align: center;
+        margin: auto;
+        padding: auto;
       }
       #nameAndTitle {
         background-color: white;
@@ -35,7 +37,11 @@
         display: grid;
         grid-template-columns: 30% auto;
       }
-      #sidebar,
+      #sidebar {
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+      }
       #content {
         display: flex;
         flex-direction: column;
@@ -46,6 +52,7 @@
         text-transform: uppercase;
         border: 1px solid #eaeaea;
         border-radius: 15px;
+        
       }
     </style>
   </head>
@@ -61,13 +68,13 @@
         <h3>Contatos</h3>
         <ul id="contactList"></ul>
         <li id="contactList">
-          <i class="fa-solid fa-phone"></i>Telefone: (45)99980-9638
+          <i class="fa-solid fa-phone"></i><b>Telefone:</b> (45)99980-9638
         </li>
         <li id="contactList">
-          <i class="fa-solid fa-envelope"></i>E-mail: barra-wag@hotmail.com
+          <i class="fa-solid fa-envelope"></i><b>E-mail:</b> barra-wag@hotmail.com
         </li>
         <li id="contactList">
-          <i class="fa-solid fa-location-dot"></i>Localização: Foz Do Iguaçu/PR
+          <i class="fa-solid fa-location-dot"></i><b>Localização:</b> Foz Do Iguaçu/PR
         </li>
       </div>
       <div id="content"></div>
